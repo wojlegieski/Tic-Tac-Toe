@@ -123,7 +123,7 @@ def who_win(index):
 
 
 def print_score(score):
-    mesage = pygame.font.Font("C:\Windows\Fonts\Arial.ttf", 50)
+    mesage = pygame.font.Font("OpenSans-Bold.ttf", 50)
     if score == 1:
         text = "wygrał 1"
     elif score == 2:
