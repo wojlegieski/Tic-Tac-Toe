@@ -15,10 +15,10 @@ if rows < wincondition:
 game = []
 for somethink in range(rows ** 2):
     game.append(0)
-move = random.randint(1, 2)  # 1- gracz 2 - komputer
+move = random.randint(1, 2)
 score = 0  # 0 - gra trwa  1 - wygrał geazcz 3 - remis
 end = False
-bacckground_color = (5, 5, 5)
+bacckground_color = (14, 14, 14)
 player_1_color = (0, 255, 0)
 player_11_color = (255, 255, 0)
 player_2_color = (255, 0, 0)
@@ -59,6 +59,7 @@ c2 = 1
 c3 = 1
 
 scall = int(rows / 25)
+
 
 
 def print_line():
@@ -123,6 +124,7 @@ def who_win(index):
 
 
 def print_score(score):
+    window.fill(bacckground_color)
     mesage = pygame.font.Font("OpenSans-Bold.ttf", 50)
     if score == 1:
         text = "player one won"
