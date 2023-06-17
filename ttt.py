@@ -125,11 +125,11 @@ def who_win(index):
 def print_score(score):
     mesage = pygame.font.Font("OpenSans-Bold.ttf", 50)
     if score == 1:
-        text = "wygrał 1"
+        text = "player one won"
     elif score == 2:
-        text = "wygrał 2"
+        text = "player two won"
     elif score == 3:
-        text = "remis"
+        text = "draw"
     text_mesage = mesage.render(text, True, mesage_color)
     text_mesage_rect = text_mesage.get_rect()
     text_mesage_rect.center = (width / 2, width / 2)
