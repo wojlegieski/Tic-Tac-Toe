@@ -8,7 +8,7 @@ window = pygame.display.set_mode((width, width), 0, 32)
 pygame.display.set_caption("trywialne.exe")
 FPS = 60
 fpsClock = pygame.time.Clock()
-rows = 10
+rows = 15
 wincondition = 5
 if rows < wincondition:
     sys.exit()
